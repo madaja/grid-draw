@@ -1,0 +1,33 @@
+h1 {
+    color: #272727;
+    text-align: center;
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    border: 1px solid #272727;
+    margin: auto;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+    /*border: 1px dotted black;*/
+    background-color: aqua;
+}
+
+.moused {
+    background-color: brown;
+}
+
+#clear {
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    width: 75px;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
