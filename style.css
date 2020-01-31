@@ -13,8 +13,8 @@ h1 {
 }
 
 .block {
-    width: 30px;
-    height: 30px;
+    /*width: 30px;
+    height: 30px;*/
     /*border: 1px dotted black;*/
     background-color: aqua;
 }

@@ -1,5 +1,5 @@
 const container = document.querySelector("#grid-container");
-let blockCount = 16;
+let blockCount = 64;
 
 function createDiv() {
     let div = document.createElement('div');
@@ -9,7 +9,10 @@ const blocksArray = [];
 
 for (let i = 1; i <= (blockCount * blockCount); i++) {
     let div = createDiv();
+    let blockSize = 480 / blockCount;
     div.classList.add('block');
+    div.style.width = blockSize + 'px';
+    div.style.height = blockSize + 'px';
     blocksArray.push(div);
 
 }
@@ -34,12 +37,3 @@ clear.addEventListener('click', () => {
         div.classList.remove('moused');
     });
 });
-/* const testp = document.createElement('p');
-testp.textContent = 'test';
-container.appendChild(testp);*/ 
-
-
-/*for (i = 1; i <= 3; i++) {
-    container.innerHTML += '<p>hi there</p>'
-}
-*/
